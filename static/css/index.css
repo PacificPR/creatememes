@@ -12,9 +12,15 @@ body{
     width: 85%;
     margin-left: 5%;
 
-
 }
 
+li{
+    border-right: 0.05vw solid #bbb;
+}
+.navbar-brand{
+    padding:0.3vw;
+    border-right:  0.05vw solid #bbb;
+}
 .button{
     height: 50px;
     width: 50%;
@@ -24,8 +30,8 @@ body{
     box-sizing: border-box;
     font-family: Roboto;
     font-style: style;
-    font-size: 40px;
-    padding-left: 2rem;
+    font-size: 2vw;
+    padding-left: 2vw;
     position: absolute;
     top: 50%;
     left: 50%;
