@@ -17,10 +17,7 @@ body{
 li{
     border-right: 0.05vw solid #bbb;
 }
-.navbar-brand{
-    padding:0.3vw;
-    border-right:  0.05vw solid #bbb;
-}
+
 .button{
     height: 50px;
     width: 50%;
@@ -129,4 +126,33 @@ li{
 
 .contain input[type="submit"]:hover{
 	background: #2EBC99;
+}
+
+.navbar{
+    background-color: darkslategray;
+
+}
+
+.linkd{
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-right: 0.1vw blue;
+    font-size: 2vw;
+    padding-left: 0.2vw;
+    padding-right: 0.5vw;
+}
+
+.linkd:hover{
+    border-bottom: 0.1vw orangered;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#lf2{
+    margin-left: -70%;
+    padding-left: 2vw;
+}
+#lf3{
+    margin-right: 7%;
 }
