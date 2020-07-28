@@ -1,4 +1,2 @@
-Flask
-Jinja
-Werkzeug
+flask
 gunicorn
