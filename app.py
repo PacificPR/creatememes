@@ -1,7 +1,5 @@
 from flask import Flask , render_template , redirect , url_for , request
-from flask_cors import CORS, cross_origin
 import requests
-import shutil
 
 
 app = Flask(__name__)
