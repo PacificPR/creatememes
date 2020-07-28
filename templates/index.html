@@ -1,0 +1,16 @@
+{% extends "base.html" %} 
+{% block title %} MEMEZZ {% endblock %}
+
+{% block content %}
+    <img src="../static/img/bg1.jpeg" id=bg />   
+
+    <form action="/search" class="fomr">
+        <input type="submit" class="button" id="btn" value="GET TRENDY MEMES" >
+    </form>
+
+    <script>
+        function myFunction() {
+          document.getElementById("btn").style.color = "red";
+        }
+    </script>
+{% endblock %}

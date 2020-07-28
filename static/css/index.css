@@ -1,0 +1,126 @@
+body{
+    background-color: slategrey;
+    height: 100%;
+    width: 100%;
+    margin-left: 2%;
+}
+
+#bg{
+    margin-top: 1.7%;
+    opacity: 0.70;
+    height: 65%;
+    width: 85%;
+    margin-left: 5%;
+
+
+}
+
+.button{
+    height: 50px;
+    width: 50%;
+    cursor: pointer; 
+    border-radius: 2.8rem; 
+    border: none;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: style;
+    font-size: 40px;
+    padding-left: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    opacity: 0.8;
+    text-align: center;
+    background-color: slategrey;
+    color:whitesmoke;
+}
+
+.button:hover{
+    background-color: cadetblue ;
+}
+
+::placeholder{
+    color: whitesmoke;
+}
+
+.main{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.contain{
+	font: Arial, Helvetica, sans-serif;
+    margin-left: 50%;
+    float:inline-start;
+    width: 50%;
+    height: 70%;
+    padding: 1rem;
+    background: #F7F7F7;
+}
+
+.inner{
+    width: 100%;
+    margin-right: 20%;
+}
+
+.contain h1{
+	background: #43D1AF;
+	padding: 1rem ;
+	font-size: 3.5vw;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+	color: #fff;
+}
+
+#tp,#bt{
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+	width: 80%;
+    background: #fff;
+    margin-right: 70%;
+    margin-left: -40%;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+    padding: 3%;
+	color: black;
+    font: 95% Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    
+}
+
+#tp::placeholder,#bt::placeholder{
+    color: black;
+    opacity: 0.3;
+}
+
+#tp::selection,#bt::selection{
+    border-color: aqua;
+}
+
+.contain input[type="submit"]{
+    font-size: 3.5vw;
+    font-weight: 300;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    width: 80%;
+    margin-left: -40%;
+	padding: 0.5rem;
+	background: #43D1AF;
+    border-bottom: 0.2rem solid #30C29E;
+	border-top-style: none;
+	border-right-style: none;
+    border-left-style: none;	
+    margin-right: 30%;
+	color: #fff;
+}
+
+.contain input[type="submit"]:hover{
+	background: #2EBC99;
+}
