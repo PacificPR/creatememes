@@ -23,13 +23,11 @@ def search():
 @app.route("/create",methods=["POST","GET"])
 def create():
     if request.method == "POST":
-        #data = request.form.get["name"]
-        #data = request.form.get[]
         m_url = request.form.get('meme_url')
         m_id =  request.form.get('meme_id')
         return render_template("create.html",img=m_url,id=m_id)
-    return "ERROR BRUH"
-    #return render_template("create.html")
+    else:
+        return redirect(url_for(search))
 
 @app.route("/final",methods=["POST","GET"])
 def final():
@@ -43,28 +41,12 @@ def final():
         data = requests.post(url=URL,params=PARAMS)
         fin = data.json() 
 
-        #image_url = fin['data']['url']
-        #filename = "./static/img/meme.jpg"
-
-        # Open the url image, set stream to True, this will return the stream content.
-        #r = requests.get(image_url, stream = True)
-
-        # Check if the image was retrieved successfully
-        #if r.status_code == 200:
-        # Set decode_content value to True, otherwise the downloaded image file's size will be zero.
-            #r.raw.decode_content = True
-    
-            # Open a local file with wb ( write binary ) permission.
-            #with open(filename,'wb') as f:
-                #shutil.copyfileobj(r.raw, f)
-
         if fin["success"]:
             return render_template("final.html",img=fin["data"]["url"])
-
-            #return render_template("final.html",img=image_url)
         else:
-            return "Error"
-    return render_template("final.html",)
+            return "Error Loading Request, Retry ..."
+    else:
+        return redirect(url_for("search"))
 
 if __name__=="__main__" :
     app.run(debug=True)
