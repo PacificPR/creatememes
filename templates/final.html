@@ -14,10 +14,14 @@
 
 <br>
     <!-- <a href={{img}} download > <img src="../static/img/meme.jpg" alt="thumbnail" width="120"> </a>  -->
-    <a href="{{img}}" download>
-       <img src={{img}} > 
+    <a style="margin-left: 30%;" href="{{img}}" download>
+       <img src={{img}} style="width: 40vw;height: 40vw;"> 
     </a>
-
-     <!---   <button class="download" ><i class="fa fa-download"></i> Download</button>  -->
+    <div class="down">
+      <form method="POST" action="/download">
+        <input type="hidden" name="url" value="{{img}}" />
+        <button class="btn" id="bt" ><i class="fa fa-download"></i> Download</button>  
+      </form>
+    </div>
 {% endblock %}
 

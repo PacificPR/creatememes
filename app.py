@@ -1,5 +1,6 @@
-from flask import Flask , render_template , redirect , url_for , request
+from flask import Flask , render_template , redirect , url_for , request , send_file
 import requests
+import shutil
 
 
 app = Flask(__name__)
@@ -45,6 +46,25 @@ def final():
             return "Error Loading Request, Retry ..."
     else:
         return redirect(url_for("search"))
+
+@app.route("/download",methods=["POST","GET"])
+def download():
+    if request.method == "POST":
+        img_url = request.form.get('url')
+        filename = "./static/img/meme.jpg"
+
+        r = requests.get(img_url, stream = True)
+
+        if r.status_code == 200:
+            r.raw.decode_content = True
+            with open(filename,'wb') as f:
+                shutil.copyfileobj(r.raw, f)
+            return send_file(filename,as_attachment=True)
+        else:
+            return "Couldn't Download File"
+
+    else :
+        return " Error Downloading File "
 
 if __name__=="__main__" :
     app.run(debug=True)

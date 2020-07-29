@@ -78,7 +78,7 @@ li{
 	color: #fff;
 }
 
-#tp,#bt{
+#tp,#bot{
 	outline: none;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -97,12 +97,12 @@ li{
     
 }
 
-#tp::placeholder,#bt::placeholder{
+#tp::placeholder,#bot::placeholder{
     color: black;
     opacity: 0.3;
 }
 
-#tp::selection,#bt::selection{
+#tp::selection,#bot::selection{
     border-color: aqua;
 }
 
@@ -156,3 +156,23 @@ li{
 #lf3{
     margin-right: 7%;
 }
+
+.down{
+    margin-top: 2%;
+    
+}
+
+#bt{
+    border: none;
+    padding: 0.5vw 2vw ;
+    cursor: pointer;
+    font-size: 2vw;
+    background-color: dodgerblue;
+    width: 14%;
+    margin-left: 40%;
+  }
+  
+  /* Darker background on mouse-over */
+  #bt:hover {
+    background-color: rgb(58, 58, 233);
+  }
