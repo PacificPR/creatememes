@@ -1,181 +1,179 @@
-/*body{
-    background-color: slategrey;
-    height: 100%;
-    width: 100%;
-    margin-left: 2%;
-}
-*/
-
-#bg{
-    margin-top: 1.7%;
-    opacity: 0.70;
-    height: 65%;
-    width: 85%;
-    margin-left: 5%;
-
+/* body {
+  background-color: gray;
+  margin-right: 1%;
+  max-height: 100%;
+  width: 100%;
+} */
+#bg {
+  margin-top: 1.7%;
+  opacity: 0.7;
+  height: 65%;
+  width: 85%;
+  margin-left: 5%;
 }
 
-li{
-    border-right: 0.05vw solid #bbb;
+li {
+  border-right: 0.05vw solid #bbb;
 }
 
-.button{
-    height: 50px;
-    width: 50%;
-    cursor: pointer; 
-    border-radius: 2.8rem; 
-    border: none;
-    box-sizing: border-box;
-    font-family: Roboto;
-    font-style: style;
-    font-size: 2vw;
-    padding-left: 2vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    opacity: 0.8;
-    text-align: center;
-    background-color: slategrey;
-    color:whitesmoke;
+.button {
+  height: 50px;
+  width: 50%;
+  cursor: pointer;
+  border-radius: 2.8rem;
+  border: none;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-style: style;
+  font-size: 2vw;
+  padding-left: 2vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  text-align: center;
+  background-color: slategrey;
+  color: whitesmoke;
 }
 
-.button:hover{
-    background-color: cadetblue ;
+.button:hover {
+  background-color: cadetblue;
 }
 
-::placeholder{
-    color: whitesmoke;
+::placeholder {
+  color: whitesmoke;
 }
 
-.main{
-    max-width: 100%;
-    max-height: 100%;
+.main {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.contain{
-	font: Arial, Helvetica, sans-serif;
-    margin-left: 50%;
-    float:inline-start;
-    width: 50%;
-    height: 70%;
-    padding: 1rem;
-    background: #F7F7F7;
-    padding-bottom: 22%;
-    height: 80%;
+.contain {
+  font: Arial, Helvetica, sans-serif;
+  margin-left: 50%;
+  float: inline-start;
+  width: 50%;
+  height: 70%;
+  padding: 1rem;
+  background: #f7f7f7;
+  padding-bottom: 22%;
+  height: 80%;
 }
 
-.inner{
-    width: 100%;
-    margin-right: 20%;
+.inner {
+  width: 100%;
+  margin-right: 20%;
 }
 
-.contain h1{
-	background: #43D1AF;
-	padding: 1rem ;
-	font-size: 3.5vw;
-    font-weight: 300;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-	color: #fff;
+.contain h1 {
+  background: #43d1af;
+  padding: 1rem;
+  font-size: 3.5vw;
+  font-weight: 300;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #fff;
 }
 
-#tp,#bot{
-	outline: none;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    position: relative;
-	width: 80%;
-    background: #fff;
-    margin-right: 70%;
-    margin-left: -40%;
-	margin-bottom: 4%;
-	border: 1px solid #ccc;
-    padding: 3%;
-	color: black;
-    font: 95% Arial, Helvetica, sans-serif;
-    font-size: 2vw;
-    
+.caption {
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  width: 80%;
+  background: #fff;
+  margin-right: 70%;
+  margin-left: -40%;
+  margin-bottom: 4%;
+  border: 1px solid #ccc;
+  padding: 3%;
+  color: black;
+  font: 95% Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  height: 4vw;
 }
 
-#tp::placeholder,#bot::placeholder{
-    color: black;
-    opacity: 0.3;
+.caption::placeholder {
+  color: black;
+  opacity: 0.3;
 }
 
-#tp::selection,#bot::selection{
-    border-color: aqua;
+.caption::selection {
+  border-color: aqua;
 }
 
-.contain input[type="submit"]{
-    font-size: 3.5vw;
-    font-weight: 300;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-    width: 80%;
-    margin-left: -40%;
-	padding: 0.5rem;
-	background: #43D1AF;
-    border-bottom: 0.2rem solid #30C29E;
-	border-top-style: none;
-	border-right-style: none;
-    border-left-style: none;	
-    margin-right: 30%;
-	color: #fff;
+.contain input[type="submit"] {
+  font-size: 3.5vw;
+  font-weight: 300;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 80%;
+  margin-left: -40%;
+  padding: 0.5rem;
+  background: #43d1af;
+  border-bottom: 0.2rem solid #30c29e;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  margin-right: 30%;
+  color: #fff;
 }
 
-.contain input[type="submit"]:hover{
-	background: #2EBC99;
+.contain input[type="submit"]:hover {
+  background: #2ebc99;
 }
 
-.navbar{
-    background-color: darkslategray;
-
+.navbar {
+  background-color: darkslategray;
+  display: flex;
+  justify-content: space-between;
 }
 
-.linkd{
-    color:white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-right: 0.1vw blue;
-    font-size: 2vw;
-    padding-left: 0.2vw;
-    padding-right: 0.5vw;
+.linkd {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-right: 0.1vw blue;
+  font-size: 2vw;
+  padding-left: 0.2vw;
+  padding-right: 0.5vw;
 }
 
-.linkd:hover{
-    border-bottom: 0.1vw orangered;
-    color:white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+.linkd:hover {
+  border-bottom: 0.1vw orangered;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-#lf2{
-    margin-left: -70%;
-    padding-left: 2vw;
+#lf2 {
+  margin-left: -70%;
+  padding-left: 2vw;
 }
-#lf3{
-    margin-right: 7%;
+/* #lf3 {
+  margin-right: 7%;
+} */
+
+.down {
+  margin-top: 2%;
 }
 
-.down{
-    margin-top: 2%;
-    
+#bt {
+  border: none;
+  padding: 0.5vw 2vw;
+  cursor: pointer;
+  font-size: 2vw;
+  background-color: dodgerblue;
+  width: 14%;
+  margin-left: 40%;
 }
 
-#bt{
-    border: none;
-    padding: 0.5vw 2vw ;
-    cursor: pointer;
-    font-size: 2vw;
-    background-color: dodgerblue;
-    width: 14%;
-    margin-left: 40%;
-  }
-  
-  /* Darker background on mouse-over */
-  #bt:hover {
-    background-color: rgb(58, 58, 233);
-  }
+/* Darker background on mouse-over */
+#bt:hover {
+  background-color: rgb(58, 58, 233);
+}

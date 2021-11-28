@@ -13,6 +13,7 @@
             <input type="image"  src={{item["url"]}} memName="{{item["name"]}}" memId="{{item["id"]}}" style="width: 90%;height: 90%;" />
             <input type="hidden" name="meme_id" value="{{item["id"]}}" />
             <input type="hidden" name="meme_url" value="{{item["url"]}}" />
+            <input type="hidden" name="meme_box_count" value="{{item["box_count"]}}" />
     </form>
     </div>
         {% endfor %}

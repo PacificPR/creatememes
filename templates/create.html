@@ -19,9 +19,22 @@
     <div class="contain">
         <h1>Customize It </h1>
         <form method="POST" class="inner" action="/final" style="margin-left: 50%;">
-        <input type="text" name="top" id="tp" placeholder="ENTER TOP TEXT " />
-        <input type="text" name="bot" id="bot" placeholder="ENTER BOTTOM TEXT " />
+          <div class="conatiner-caption" >
+          {% for i in range(box_count) %}
+            {% if i==0 %}
+            <input class="caption" type="text" name={{i}} id={{i}} placeholder="Enter 1st caption " />
+            {% elif i==1 %}
+            <input class="caption" type="text" name={{i}} id={{i}} placeholder="Enter 2nd caption " />
+            {% elif i==2 %}
+            <input class="caption" type="text" name={{i}} id={{i}} placeholder="Enter 3rd caption " />
+            {% else %}
+            <input class="caption" type="text" name={{i}} id={{i}} placeholder="Enter {{4}}th caption " />
+            {% endif %}
+          {% endfor %}
+        </div>
         <input type="hidden" name="temp_id" value={{id}} />
+        <input type="hidden" name="box_count" value={{box_count}} />
+
         <input type="submit" value="CREATE" />
         </form>
     </div>
