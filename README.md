@@ -26,6 +26,3 @@ Link : https://creatememes.herokuapp.com/
 
 ![alt text](readme_img/4.Final.png)
 
-
-Note : Some of the meme templates have more than two slots for text, and the API used provides option only for two text blocks.<br />
-       Will update it once API adds new functionality to add multiple text blocks.
